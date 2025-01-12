@@ -1,34 +1,42 @@
-/*Write a program to search any element in the array*/
-
 #include<iostream>
 #include<iomanip>
-#include<cmath>
 
 using namespace std;
 
-int main()
+void search(int [],int,int,int&,bool&);
+void search(int list[],const int size,int num,int& index,bool& found)
 {
-	int num,i,j;
-	bool found;
-	int list[5]={2,4,6,8,10};
-	cout<<"\nEnter the number you want to search: ";
-	cin>>num;
-	for(i=0;i<5;i++)
+	int i;
+	for(i=0;i<size;i++)
 	{
-		if(list[i] == num)
+		if(num==list[i])
 		{
-			found = true;
-			j=i;
+			found=true;
+			if(found==true)
+			{
+				index=i;
+				cout<<"\nNumber is found at index "<<index;
+			}
 		}
 	}
-	if(found == true)
+	if(found!=true)
 	{
-		cout<<"\nThe Number is found at index "<<j;
+		cout<<"\nNumber not found!\n";
 	}
-	else
+}
+
+int main()
+{
+	const int size1 = 4;
+	int ind,num1,i,arr[size1];
+	bool found1;
+	for(i=0;i<size1;i++)
 	{
-		cout<<"\nNumber not found in the list!\n";
+		cout<<"\nEnter value for index "<<i<<": ";
+		cin>>arr[i];
 	}
-		
-	return 0;
+	cout<<"\nEnter number you want to search: ";
+	cin>>num1;
+	search(arr,size1,num1,ind,found1);
+	
 }
