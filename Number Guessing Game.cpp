@@ -1,4 +1,4 @@
-/* Problem: Write a Number guessing game where the user has to guess a secret number. After every guess
+/* Problem: Create a Number guessing game where the user has to guess a secret number. After every guess
 the program tells the user whether their number was too large or too small. At the end the number of tries
 needed should be printed. It counts only as one try if they input the same nummber multiple times consecutively.*/
 
@@ -14,8 +14,8 @@ int main()
 	int i,num,life,previous_num;
 	life = 5;
 	previous_num = num;
-	cout<<"You have total of 5 lifes to guess the number!\n";
-	for(i=0;i<8;i++)
+	cout<<"You have total of 5 lifes and 10 tries to guess the number!\n";
+	for(i=0;i<10;i++)
 	{
 		cout<<"\nEnter a number: ";
 	    cin>>num;
