@@ -30,13 +30,13 @@ int main()
 			cout<<"\nWelldone! you guessed the number\n";
 			break;
 		}
-		else if(num > 2)
+		else if(num > secret_num)
 		{
 			cout<<"\nNumber is too large!";
 			life --;
 			cout<<"\n\nYou are left with "<<life<<" lifes\n";
 		}
-		else if(num < 2)
+		else if(num < secret_num)
 		{
 			cout<<"\nNumber is too small!";
 			life --;
