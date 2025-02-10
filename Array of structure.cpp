@@ -1,7 +1,7 @@
 /*(Program): Declare an array of structure (Employee),having fields "name, id No, salary
     and gender." Then:
 	1)Find the male employ with highest salary and display its record.
-	2)Find the female employ with highest salary and display its record."*/
+	2)Find the female employ with lowest salary and display its record."*/
 
 #include<iostream>
 #include<string>
