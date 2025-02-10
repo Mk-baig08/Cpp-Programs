@@ -34,7 +34,7 @@ int main()
 			cin>>marks[i][j];
 			sum+=marks[i][j];
 		}
-		average[i]=sum/5.0;     //2)Finding Average of eah student in 5 subjects.
+		average[i]=sum/5.0;     //2)Finding Average of each student in 5 subjects.
 		cout<<"-----------------------------";
 		cout<<"\nAverage of student "<<i+1<<": "<<average[i];
 		cout<<"\n---------------------------\n";
@@ -107,7 +107,7 @@ int main()
 	cout<<"\n Student '"<<min_marks+1<<"' got lowest marks in subject 4.\n";
 	cout<<"------------------------------------------------------------\n";
 	int count_f=0; 
-	char gradef;   //7)Finding failed students in subj 4.
+	char gradef;   //7)Finding failed students in subj 2.
 	for(i=0;i<students;i++)
 	{
 		if(marks[i][1]<50)
@@ -117,7 +117,7 @@ int main()
 		}
 	}
 	cout<<"\n "<<count_f<<" Students got failed in subject 2 with grade '"<<gradef<<"'\n";
-	int count_p=0;  //8)Finding students with A grade in subj 2.
+	int count_p=0;  //8)Finding students with A grade in subj 4.
 	char gradep;      
 	for(i=0;i<students;i++)
 	{
